@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Second challenge checing if its length """
-from typing import Any, Sequence, Optional
+from typing import Optional, Any, Sequence
 
 
 # The types of the elements of the input are not known
