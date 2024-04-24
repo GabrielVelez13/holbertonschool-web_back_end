@@ -6,7 +6,7 @@ T = TypeVar('T')
 
 
 def safely_get_value(dct: Mapping, key: Any,
-                     default: Optional[T] = None) -> Union[Any, T]:
+                     default: Union[T, type(None)] = None) -> Union[Any, T]:
     """ Using typevar Checking if it is length """
     if key in dct:
         return dct[key]
