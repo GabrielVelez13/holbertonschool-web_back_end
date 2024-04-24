@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Fourth challenge """
-from typing import Tuple, List, Sequence
+from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
