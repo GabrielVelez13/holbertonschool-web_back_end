@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Second challenge checing if its length"""
+""" Second challenge checing if its length """
 from typing import Any, Sequence, Optional
 
 
