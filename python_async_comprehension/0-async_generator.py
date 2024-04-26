@@ -2,10 +2,10 @@
 """ Creating a coroutine """
 from asyncio import sleep
 from random import uniform
-from typing import Generator
+from typing import Iterable
 
 
-async def async_generator() -> Generator[float, None, None]:
+async def async_generator() -> Iterable:
     """ Yield a random number from 0 to 10 """
     for _ in range(10):
         await sleep(1)
