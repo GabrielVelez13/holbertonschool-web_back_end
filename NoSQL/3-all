@@ -1,3 +1,4 @@
 //Shows data inside database
 
+use school
 show collection
