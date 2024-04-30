@@ -2,3 +2,4 @@
 
 use school
 show collection
+db.collectionName.find()
