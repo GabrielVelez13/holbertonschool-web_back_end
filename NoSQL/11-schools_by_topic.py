@@ -3,5 +3,6 @@
 
 
 def schools_by_topic(mongo_collection, topic):
+    """Returns all schools with specific topics """
     schools = mongo_collection.find({"topics":topic})
     return schools
