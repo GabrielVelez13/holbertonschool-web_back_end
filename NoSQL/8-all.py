@@ -3,5 +3,8 @@
 import pymongo
 
 def list_all(mongo_collection):
-    data = mongo_collection.find()
-    return list(data) if data else []
+    """ List all documents in a collection """
+    if mongo_collection is not None:
+        document = mongo_collection.find()
+        return list(document) if document else []
+    return []
