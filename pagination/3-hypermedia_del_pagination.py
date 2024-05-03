@@ -39,15 +39,16 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-            assert isinstance(index, int) and index >= 0
-            assert isinstance(page_size, int) and page_size >= 0
+        """ This way if data is deleted it still shows the correct data """
+        assert isinstance(index, int) and index >= 0
+        assert isinstance(page_size, int) and page_size >= 0
 
-            indexed_data = self.indexed_dataset()
-            data = [indexed_data[i] for i in range(index, index+page_size) if i in indexed_data]
-            dictionary = {
-                "index": index,
-                "data": data,
-                "page_size": page_size,
-                "next_index":index + page_size
-            }
-            return dictionary
+        indexed_data = self.indexed_dataset()
+        data = [indexed_data[i] for i in range(index, index+page_size)]
+        dictionary = {
+            "index": index,
+            "data": data,
+            "page_size": page_size,
+            "next_index": index + page_size
+        }
+        return dictionary
