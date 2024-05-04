@@ -19,4 +19,5 @@ def countMethods():
     print(f"{count} status check")
 
 
-countMethods()
+if __name__ == "__main__":
+    countMethods()
