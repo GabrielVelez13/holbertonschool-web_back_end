@@ -13,7 +13,7 @@ def countMethods():
 
     print("Methods:")
     for method in ["GET", "POST", "PUT", "PATCH", "DELETE"]:
-        print(f"\tmethod {method}: {col.count_documents({"method": method})}")
+        print(f"\tmethod {method}: {col.count_documents({'method': method})}")
 
     count = col.count_documents({"method": "GET", "path": "/status"})
     print(f"{count} status check")
