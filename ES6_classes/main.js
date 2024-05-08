@@ -1,5 +1,13 @@
-import Pricing from './4-pricing.js';
+import Building from './5-building.js';
 
-test("convertPrice is implemented correctly", () => {
-    expect(Pricing.convertPrice(100, 2)).toBe(200);
-});
+const b = new Building(100);
+console.log(b);
+
+class TestBuilding extends Building {}
+
+try {
+    new TestBuilding(200)
+}
+catch(err) {
+    console.log(err);
+}
