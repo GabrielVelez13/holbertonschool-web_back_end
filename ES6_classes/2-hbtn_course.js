@@ -44,7 +44,7 @@ export default class HolbertonCourse {
   }
 
   _verifyArray(value, attribute) {
-    if !Array.isArray(students) || students.some((student) => typeof student !== 'string')) {
+    if (!Array.isArray(students) || students.some((student) => typeof student !== 'string')) {
       throw TypeError(`${attribute} must be an array of strings`);
     }
     return value;
