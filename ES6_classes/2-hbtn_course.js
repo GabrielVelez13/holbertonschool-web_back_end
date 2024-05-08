@@ -22,11 +22,11 @@ export default class HolbertonCourse {
   }
 
   set length(newLength) {
-    this.length = this._verifyNumber(newLength, 'Length')
+    this.length = this._verifyNumber(newLength, 'Length');
   }
 
   set students(newStudents) {
-    this._students = this._verifyArray(newStudents, 'Students')
+    this._students = this._verifyArray(newStudents, 'Students');
   }
 
   _verifyString(value, attribute) {
