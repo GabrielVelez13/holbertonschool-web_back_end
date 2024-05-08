@@ -1,0 +1,1 @@
+In this directory, I shall be learning about the JavaScript.
