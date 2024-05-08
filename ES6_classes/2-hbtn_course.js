@@ -18,15 +18,15 @@ export default class HolbertonCourse {
   }
 
   set name(newName) {
-    this._name = this._verifyString(newName, 'name');
+    this._name = this._verifyString(newName, 'Name');
   }
 
   set length(newLength) {
-    this.length = this._verifyNumber(newLength, 'length')
+    this.length = this._verifyNumber(newLength, 'Length')
   }
 
   set students(newStudents) {
-    this._students = this._verifyArray(newStudents, 'students')
+    this._students = this._verifyArray(newStudents, 'Students')
   }
 
   _verifyString(value, attribute) {
