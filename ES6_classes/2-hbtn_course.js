@@ -31,21 +31,21 @@ export default class HolbertonCourse {
 
   _verifyString(value, attribute) {
     if(typeof value !== 'string') {
-      throw new TypeError(`${attribute} must be a string`);
+      throw TypeError(`${attribute} must be a string`);
     }
     return value;
   }
 
   _verifyNumber(value, attribute) {
     if (typeof value !== 'number' || isNaN(value)) {
-      throw new TypeError(`${attribute} must be a number`);
+      throw TypeError(`${attribute} must be a number`);
     }
     return value;
   }
 
   _verifyArray(value, attribute) {
     if (!Array.isArray(value)) {
-      throw new TypeError(`${attribute} must be an array`);
+      throw TypeError(`${attribute} must be an array`);
     }
     return value;
   }
