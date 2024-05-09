@@ -1,11 +1,4 @@
-import createEmployeesObject from './11-createEmployeesObject.js';
-import createReportObject from './12-createReportObject.js';
+import Currency from "./3-currency.js";
 
-const employees = {
-    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
-    ...createEmployeesObject('marketing', ['Sylvie'])
-};
-
-const report = createReportObject(employees);
-console.log(report.allEmployees);
-console.log(report.getNumberOfDepartments(report.allEmployees));
+const dollar = new Currency('$', 'Dollars');
+console.log(dollar.displayFullCurrency());
